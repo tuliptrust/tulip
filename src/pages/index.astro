@@ -1,0 +1,17 @@
+---
+import Counter from "../components/Counter.tsx";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Tulip Trust</title>
+  </head>
+  <body>
+    <h1>Tulip Trust</h1>
+    <Counter client:load />
+  </body>
+</html>
