@@ -7,5 +7,8 @@ import react from "@astrojs/react";
 export default defineConfig({
   base: "./",
   output: "static",
+  build: {
+    assets: "relative",
+  },
   integrations: [react()],
 });
