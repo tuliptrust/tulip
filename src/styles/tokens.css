@@ -8,9 +8,15 @@
   --color-on-selected: #f6f6f6;
 
   --font: "Times New Roman", Times, serif;
-  --em-size: 24px;
+  --em-size: 21px;
   --line-height: 1.25;
   --gap: 0.5rem;
   --gutter: 2rem;
-  --max-width: 60rem;
+  --max-width: 48rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --em-size: 18px;
+  }
 }
