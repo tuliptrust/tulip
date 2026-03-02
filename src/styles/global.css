@@ -1,0 +1,73 @@
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--em-size);
+  line-height: var(--line-height);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+/* Layout wrappers */
+.site {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+  padding-top: calc(var(--em-size) * var(--line-height) + var(--gap) * 2);
+}
+
+.page-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar */
+
+header.site-header {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text);
+  padding: var(--gap);
+}
+
+.nav-link.work {
+  background-color: var(--color-primary1);
+}
+
+.nav-link.about {
+  background-color: var(--color-primary2);
+}
+
+.nav-link[aria-current="page"] {
+  background-color: var(--color-selected);
+  color: var(--color-on-selected);
+}

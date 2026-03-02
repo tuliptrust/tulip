@@ -1,0 +1,16 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-border: #dddddd;
+  --color-primary1: #8fea5c;
+  --color-primary2: #ff80a8;
+  --color-selected: #111111;
+  --color-on-selected: #f6f6f6;
+
+  --font: "Times New Roman", Times, serif;
+  --em-size: 24px;
+  --line-height: 1.25;
+  --gap: 0.5rem;
+  --gutter: 2rem;
+  --max-width: 60rem;
+}

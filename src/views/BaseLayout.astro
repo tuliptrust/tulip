@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+
+const { title = "Tulip Trust", active } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="site">
+    <header class="site-header">
+      <nav class="navbar">
+        <a
+          class="nav-link work"
+          href="/work/"
+          aria-current={active === "work" ? "page" : undefined}
+        >
+          Work
+        </a>
+        <a
+          class="nav-link about"
+          href="/about/"
+          aria-current={active === "about" ? "page" : undefined}
+        >
+          About
+        </a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <div class="page-inner">
+        <slot />
+      </div>
+    </main>
+  </body>
+</html>
