@@ -7,7 +7,7 @@
   --color-selected: #111111;
   --color-on-selected: #f6f6f6;
 
-  --font: "Times New Roman", Times, serif;
+  --font: sans-serif;
   --em-size: 21px;
   --line-height: 1.25;
   --gap: 0.5rem;
